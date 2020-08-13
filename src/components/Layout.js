@@ -1,7 +1,17 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 import "./layout.css"
+
+const GlobalStyles = createGlobalStyle`
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Ubuntu, sans-serif;
+  }
+
+  body {
+    font-family: Lato, sans-serif;
+  }
+`
 
 const Main = styled.main`
   margin: 0 auto;
@@ -17,6 +27,7 @@ const Footer = styled.footer`
 
 const Layout = ({ children }) => (
   <>
+    <GlobalStyles />
     <Main>{children}</Main>
     <Footer>
       &copy; {new Date().getFullYear()}, Built with
