@@ -1,48 +1,29 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
-import Header from "./header"
-import Intro from "../sections/Intro"
-import About from "../sections/About"
-import Experience from "../sections/Experience"
-import Projects from "../sections/Projects"
-import Contact from "../sections/Contact"
 import "./layout.css"
 
-const Layout = () => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+const Main = styled.main`
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 750px;
+`
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main>
-        <Intro />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
-      <footer
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        &copy; {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
-    </>
-  )
-}
+const Footer = styled.footer`
+  margin: 0 auto;
+  padding: 0 1.0875rem 1.45rem;
+  max-width: 960px;
+`
+
+const Layout = ({ children }) => (
+  <>
+    <Main>{children}</Main>
+    <Footer>
+      &copy; {new Date().getFullYear()}, Built with
+      {` `}
+      <a href="https://www.gatsbyjs.org">Gatsby</a>
+    </Footer>
+  </>
+)
 
 export default Layout

@@ -1,5 +1,6 @@
-import React from "react"
+import styled from "styled-components"
 
-const SectionList = ({ children }) => <ol>{children}</ol>
-
-export default SectionList
+export default styled.ol`
+  margin: 0;
+  padding: 0;
+`
