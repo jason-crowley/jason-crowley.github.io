@@ -4,7 +4,7 @@ import styled from "styled-components"
 const Card = styled.li`
   padding: 0;
   border: 0.2px solid #eee;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.07);
   list-style-type: none;
   transition: box-shadow 0.1s linear;
