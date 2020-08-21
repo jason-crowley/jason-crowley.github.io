@@ -20,9 +20,15 @@ const Card = styled.li`
 
 const CardHeader = styled.h2`
   margin: 0;
+
+  &:not(:first-child) {
+    margin-left: 1rem;
+  }
 `
 
 const Button = styled.button`
+  display: flex;
+  align-items: center;
   padding: 1rem;
   width: 100%;
   height: 100%;
@@ -47,17 +53,16 @@ const CardContentBox = styled.div`
   padding: 0 1rem 1rem;
 `
 
-const ItemCard = ({ heading, children }) => {
+const ItemCard = ({ image, heading, children }) => {
   const [expanded, setExpanded] = useState(false)
   const contentRef = useRef(null)
 
   return (
     <Card>
-      <CardHeader>
-        <Button onClick={() => setExpanded(expanded => !expanded)}>
-          {heading}
-        </Button>
-      </CardHeader>
+      <Button onClick={() => setExpanded(expanded => !expanded)}>
+        {image}
+        <CardHeader>{heading}</CardHeader>
+      </Button>
       <CardContent
         expanded={expanded}
         contentHeight={() => contentRef.current.scrollHeight}

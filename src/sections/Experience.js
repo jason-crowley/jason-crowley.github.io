@@ -5,16 +5,20 @@ import SectionHeading from "../components/SectionHeading"
 import SectionList from "../components/SectionList"
 import ExperienceCard from "../components/ExperienceCard"
 
+import MITRELogo from "../components/logos/MITRELogo"
+import BCHLogo from "../components/logos/BCHLogo"
+import KTBYTELogo from "../components/logos/KTBYTELogo"
+
 const Experience = () => (
   <Section>
     <SectionHeading>Experience</SectionHeading>
     <SectionList>
-      <ExperienceCard title="The MITRE Corporation">
+      <ExperienceCard title="The MITRE Corporation" logo={<MITRELogo />}>
         <ul>
           <li>Was an intern</li>
         </ul>
       </ExperienceCard>
-      <ExperienceCard title="Boston Children's Hospital">
+      <ExperienceCard title="Boston Children's Hospital" logo={<BCHLogo />}>
         <ul>
           <li>
             Trained in FHIR health resource representation and SMART app
@@ -34,7 +38,7 @@ const Experience = () => (
           </li>
         </ul>
       </ExperienceCard>
-      <ExperienceCard title="KTBYTE">
+      <ExperienceCard title="KTBYTE" logo={<KTBYTELogo />}>
         <ul>
           <li>
             Designed lessons to build practice with RGB color values, variables,
