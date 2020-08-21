@@ -1,7 +1,7 @@
-import React from "react"
+import styled from "styled-components"
 
-const Section = ({ className, children }) => (
-  <section className={className}>{children}</section>
-)
+const Section = styled.section`
+  margin-bottom: 4rem;
+`
 
 export default Section
