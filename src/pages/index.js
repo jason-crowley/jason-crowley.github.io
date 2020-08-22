@@ -8,10 +8,17 @@ import Experience from "../sections/Experience"
 import Projects from "../sections/Projects"
 import Contact from "../sections/Contact"
 
+const Footer = () => (
+  <>
+    &copy; {new Date().getFullYear()}, Built with
+    {` `}
+    <a href="https://www.gatsbyjs.org">Gatsby</a>
+  </>
+)
+
 const IndexPage = () => (
-  <Layout>
+  <Layout header={<Intro />} footer={<Footer />}>
     <SEO title="Home" />
-    <Intro />
     <About />
     <Experience />
     <Projects />

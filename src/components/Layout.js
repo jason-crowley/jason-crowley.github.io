@@ -13,27 +13,27 @@ const GlobalStyles = createGlobalStyle`
   }
 `
 
+const Header = styled.header`
+  margin: 0;
+  padding: 0;
+`
+
 const Main = styled.main`
-  margin: 0 auto;
-  padding: 0 1rem;
-  max-width: 750px;
+  margin: 0;
+  padding: 0;
 `
 
 const Footer = styled.footer`
-  margin: 0 auto;
-  padding: 0 1.0875rem 1.45rem;
-  max-width: 960px;
+  margin: 0;
+  padding: 0;
 `
 
-const Layout = ({ children }) => (
+const Layout = ({ header, children, footer }) => (
   <>
     <GlobalStyles />
+    <Header>{header}</Header>
     <Main>{children}</Main>
-    <Footer>
-      &copy; {new Date().getFullYear()}, Built with
-      {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
-    </Footer>
+    <Footer>{footer}</Footer>
   </>
 )
 
