@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Waves from "../components/Waves"
+import Hello from "../components/Hello"
 
 const WavesContainer = styled.div`
   display: flex;
@@ -31,6 +32,7 @@ const IntroHeading = styled.h1`
 
   padding: 1rem;
   text-shadow: 0 0 0 rgba(0,0,0,0.6);
+  transform: translate(0, 0);
 
   transition: all 0.3s ease;
 
@@ -43,7 +45,9 @@ const IntroHeading = styled.h1`
 
 const Intro = () => (
   <WavesContainer>
-    <IntroHeading>Hi, I'm Jason Crowley</IntroHeading>
+    <IntroHeading>
+      <Hello /> Hi, I'm Jason&nbsp;Crowley
+    </IntroHeading>
     <PositionedWaves />
   </WavesContainer>
 )
