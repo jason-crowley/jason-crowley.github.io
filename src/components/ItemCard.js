@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React, { useState, useRef, useLayoutEffect } from "react"
 import styled from "styled-components"
 
 const Card = styled.li`
@@ -44,7 +44,7 @@ const Button = styled.button`
 const CardContent = styled.div`
   margin: 0;
   padding: 0;
-  max-height: ${props => (props.expanded ? props.contentHeight() : 0)}px;
+  max-height: ${props => (props.expanded ? props.contentHeight : 0)}px;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
 `
@@ -55,7 +55,15 @@ const CardContentBox = styled.div`
 
 const ItemCard = ({ image, heading, children }) => {
   const [expanded, setExpanded] = useState(false)
+
   const contentRef = useRef(null)
+  const [contentHeight, setContentHeight] = useState(9999)
+  useLayoutEffect(() => {
+    const handleResize = () => setContentHeight(contentRef.current.scrollHeight)
+    handleResize()
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  })
 
   return (
     <Card>
@@ -65,7 +73,7 @@ const ItemCard = ({ image, heading, children }) => {
       </Button>
       <CardContent
         expanded={expanded}
-        contentHeight={() => contentRef.current.scrollHeight}
+        contentHeight={contentHeight}
         ref={contentRef}
       >
         <CardContentBox>{children}</CardContentBox>
