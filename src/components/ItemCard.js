@@ -8,6 +8,7 @@ const Card = styled.li`
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.07);
   list-style-type: none;
   transition: box-shadow 0.1s linear;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -18,7 +19,7 @@ const Card = styled.li`
   }
 `
 
-const CardHeader = styled.h2`
+const CardTitle = styled.h2`
   margin: 0;
 
   &:not(:first-child) {
@@ -26,19 +27,11 @@ const CardHeader = styled.h2`
   }
 `
 
-const Button = styled.button`
+const CardHeader = styled.div`
   display: flex;
   align-items: center;
+  margin: 0;
   padding: 1rem;
-  width: 100%;
-  height: 100%;
-  border: none;
-  background-color: transparent;
-  text-align: start;
-
-  &:focus {
-    outline: none;
-  }
 `
 
 const CardContent = styled.div`
@@ -53,8 +46,13 @@ const CardContentBox = styled.div`
   padding: 0 1rem 1rem;
 `
 
-const ItemCard = ({ image, heading, children }) => {
-  const [expanded, setExpanded] = useState(false)
+const ItemCard = ({
+  image,
+  title,
+  children,
+  expanded: defaultExpanded = false,
+}) => {
+  const [expanded, setExpanded] = useState(defaultExpanded)
 
   const contentRef = useRef(null)
   const [contentHeight, setContentHeight] = useState(9999)
@@ -66,11 +64,11 @@ const ItemCard = ({ image, heading, children }) => {
   })
 
   return (
-    <Card>
-      <Button onClick={() => setExpanded(expanded => !expanded)}>
+    <Card onClick={() => setExpanded(expanded => !expanded)}>
+      <CardHeader>
         {image}
-        <CardHeader>{heading}</CardHeader>
-      </Button>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
       <CardContent
         expanded={expanded}
         contentHeight={contentHeight}
