@@ -17,6 +17,15 @@ const Experience = () => (
         logo={<MITRELogo />}
         company="The MITRE Corporation"
         position="2020 // Healthcare Software Developer Intern"
+        tech={[
+          "React",
+          "Bootstrap",
+          "Jest",
+          "HAPI FHIR",
+          "Spark",
+          "JUnit",
+          "Docker",
+        ]}
       >
         <ul>
           <li>Was an intern</li>
@@ -26,6 +35,7 @@ const Experience = () => (
         logo={<BCHLogo />}
         company="Boston Children's Hospital"
         position="2019 // Computational Health Informatics Intern"
+        tech={["React", "SMART-on-FHIR", "Material-UI", "VictoryCharts"]}
       >
         <ul>
           <li>
@@ -50,6 +60,7 @@ const Experience = () => (
         logo={<KTBYTELogo />}
         company="KTBYTE"
         position="2018 // Teaching Assistant"
+        tech={["Java", "JavaBlocks", "Scratch", "Processing"]}
       >
         <ul>
           <li>

@@ -17,6 +17,7 @@ const Projects = () => (
         title="Weenix"
         description="A mini operating system"
         link="https://github.com/brown-cs1690/handout/wiki"
+        tech={["C", "Makefile"]}
       >
         <p>OS Project</p>
         <Weenix />
@@ -25,6 +26,7 @@ const Projects = () => (
         title="SMART Patient Data Analytics"
         description="A patient analytics dashboard for practioners"
         link="https://github.com/jason-crowley/smart-patient-data"
+        tech={["React", "SMART-on-FHIR", "Material-UI", "VictoryCharts"]}
       >
         <p>
           A SMART on FHIR app that allows doctors to view analytics for
@@ -35,6 +37,7 @@ const Projects = () => (
       <ProjectCard
         title="StormRouter"
         description="A weather-aware road trip planner"
+        tech={["Spark", "jQuery", "Mapbox", "JUnit"]}
       >
         <p>
           A Java application designed to help travelers plan a road trip around
@@ -46,6 +49,7 @@ const Projects = () => (
         title="HappyLog"
         description="A simple and colorful mood calendar"
         link="https://github.com/ArYalavarti/HappyLog"
+        tech={["React", "Express", "MongoDB"]}
       >
         <p>
           A mental health web app to track and provide analytics for
@@ -55,6 +59,7 @@ const Projects = () => (
       <ProjectCard
         title="Portfolio Website"
         description="The blazing fast website you're on right now!"
+        tech={["React", "Gatsby", "styled-components"]}
       >
         <p>
           This website was built from the ground up using a React framework

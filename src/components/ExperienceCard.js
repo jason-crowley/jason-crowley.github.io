@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import * as Card from "./Card"
+import Tech from "./Tech"
 
 const Logo = styled.div`
   margin-right: 1rem;
@@ -22,7 +23,7 @@ const ExperienceHeader = styled(Card.Header)`
   align-items: center;
 `
 
-const ExperienceCard = ({ logo, company, position, children }) => (
+const ExperienceCard = ({ logo, company, position, tech, children }) => (
   <Card.Body as="li">
     <ExperienceHeader>
       <Logo>{logo}</Logo>
@@ -31,7 +32,10 @@ const ExperienceCard = ({ logo, company, position, children }) => (
         <Position>{position}</Position>
       </div>
     </ExperienceHeader>
-    <Card.Content>{children}</Card.Content>
+    <Card.Content>
+      {children}
+      <Tech tech={tech} />
+    </Card.Content>
   </Card.Body>
 )
 

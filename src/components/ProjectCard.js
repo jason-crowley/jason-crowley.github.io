@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 
 import * as Card from "./Card"
+import Tech from "./Tech"
 
 const Title = styled.h3`
   display: inline-block;
@@ -15,7 +16,7 @@ const Description = styled.h4`
   font-weight: normal;
 `
 
-const ProjectCard = ({ title, description, link, children }) => {
+const ProjectCard = ({ title, description, link, tech, children }) => {
   const [expanded, setExpanded] = useState(false)
   return (
     <Card.Body as="li" onClick={() => setExpanded(expanded => !expanded)}>
@@ -30,6 +31,7 @@ const ProjectCard = ({ title, description, link, children }) => {
             </a>
           )}
           {children}
+          <Tech tech={tech} />
         </Card.Content>
       </Card.Collapse>
     </Card.Body>
