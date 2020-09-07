@@ -13,12 +13,20 @@ const Experience = () => (
   <Section>
     <SectionHeading>Experience</SectionHeading>
     <SectionList>
-      <ExperienceCard title="The MITRE Corporation" logo={<MITRELogo />}>
+      <ExperienceCard
+        logo={<MITRELogo />}
+        company="The MITRE Corporation"
+        position="2020 // Healthcare Software Developer Intern"
+      >
         <ul>
           <li>Was an intern</li>
         </ul>
       </ExperienceCard>
-      <ExperienceCard title="Boston Children's Hospital" logo={<BCHLogo />}>
+      <ExperienceCard
+        logo={<BCHLogo />}
+        company="Boston Children's Hospital"
+        position="2019 // Computational Health Informatics Intern"
+      >
         <ul>
           <li>
             Trained in FHIR health resource representation and SMART app
@@ -38,7 +46,11 @@ const Experience = () => (
           </li>
         </ul>
       </ExperienceCard>
-      <ExperienceCard title="KTBYTE" logo={<KTBYTELogo />}>
+      <ExperienceCard
+        logo={<KTBYTELogo />}
+        company="KTBYTE"
+        position="2018 // Teaching Assistant"
+      >
         <ul>
           <li>
             Designed lessons to build practice with RGB color values, variables,

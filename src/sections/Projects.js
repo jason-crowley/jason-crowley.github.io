@@ -15,6 +15,7 @@ const Projects = () => (
     <SectionList>
       <ProjectCard
         title="Weenix"
+        description="A mini operating system"
         link="https://github.com/brown-cs1690/handout/wiki"
       >
         <p>OS Project</p>
@@ -22,6 +23,7 @@ const Projects = () => (
       </ProjectCard>
       <ProjectCard
         title="SMART Patient Data Analytics"
+        description="A patient analytics dashboard for practioners"
         link="https://github.com/jason-crowley/smart-patient-data"
       >
         <p>
@@ -30,7 +32,10 @@ const Projects = () => (
         </p>
         <SMARTPatientData />
       </ProjectCard>
-      <ProjectCard title="StormRouter">
+      <ProjectCard
+        title="StormRouter"
+        description="A weather-aware road trip planner"
+      >
         <p>
           A Java application designed to help travelers plan a road trip around
           inclement weather to help keep their trip safe and stress free.
@@ -39,6 +44,7 @@ const Projects = () => (
       </ProjectCard>
       <ProjectCard
         title="HappyLog"
+        description="A simple and colorful mood calendar"
         link="https://github.com/ArYalavarti/HappyLog"
       >
         <p>
@@ -46,7 +52,10 @@ const Projects = () => (
           fluctuations in happiness of the user from day to day
         </p>
       </ProjectCard>
-      <ProjectCard title="Portfolio Website">
+      <ProjectCard
+        title="Portfolio Website"
+        description="The blazing fast website you're on right now!"
+      >
         <p>
           This website was built from the ground up using a React framework
           called Gatsby.
