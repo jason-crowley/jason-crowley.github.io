@@ -46,13 +46,10 @@ const Projects = () => (
           fluctuations in happiness of the user from day to day
         </p>
       </ProjectCard>
-      <ProjectCard
-        title="Privasmart"
-        link="https://github.com/hlcolani/privasmart"
-      >
+      <ProjectCard title="Portfolio Website">
         <p>
-          A Google Chrome extension that educates users on terms of service and
-          privacy policies of websites the user visits
+          This website was built from the ground up using a React framework
+          called Gatsby.
         </p>
       </ProjectCard>
     </SectionList>
