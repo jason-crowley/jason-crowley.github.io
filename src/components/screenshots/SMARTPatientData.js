@@ -2,6 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import ResponsiveImg from "../ResponsiveImg"
+
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -15,7 +17,11 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.file.childImageSharp.fluid} />
+  return (
+    <ResponsiveImg>
+      <Img fluid={data.file.childImageSharp.fluid} />
+    </ResponsiveImg>
+  )
 }
 
 export default Image

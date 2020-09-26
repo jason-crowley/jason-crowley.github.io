@@ -22,9 +22,7 @@ const Projects = () => (
         link="https://github.com/brown-cs1690/handout/wiki"
         tech={["C", "Makefile"]}
       >
-        <div style={{ margin: "0 auto", maxWidth: "50%" }}>
-          <Weenix />
-        </div>
+        <Weenix />
         <p>This semester-long project consisted of five parts:</p>
         <ul>
           <li>
@@ -63,9 +61,7 @@ const Projects = () => (
         link="https://github.com/jason-crowley/smart-patient-data"
         tech={["React", "SMART-on-FHIR", "Material-UI", "VictoryCharts"]}
       >
-        <div style={{ margin: "0 auto", maxWidth: "50%" }}>
-          <SMARTPatientData />
-        </div>
+        <SMARTPatientData />
         <p>
           A <Link href="https://smarthealthit.org">SMART on FHIR</Link> app that
           allows doctors to view analytics for patient-generated health data
@@ -85,6 +81,7 @@ const Projects = () => (
         description="A weather-aware road trip planner"
         tech={["Spark", "jQuery", "Mapbox", "JUnit"]}
       >
+        <StormRouter />
         <p>
           A Java application designed to help travelers plan a road trip around
           inclement weather to help keep their trip safe and stress-free. I
@@ -93,7 +90,6 @@ const Projects = () => (
           provide the underlying map and to enable searching for locations by
           name.
         </p>
-        <StormRouter />
       </ProjectCard>
 
       <ProjectCard
@@ -102,6 +98,7 @@ const Projects = () => (
         link="https://github.com/ArYalavarti/HappyLog"
         tech={["React", "Express", "MongoDB"]}
       >
+        <HappyLog />
         <p>
           A mental health web app to track and provide analytics for
           fluctuations in happiness of the user from day to day. The idea was to
@@ -111,7 +108,6 @@ const Projects = () => (
           which required filtering and displaying data queried from a{" "}
           <Link href="https://www.mongodb.com/">MongoDB</Link> database.
         </p>
-        <HappyLog />
       </ProjectCard>
 
       <ProjectCard
