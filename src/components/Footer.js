@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
+import Link from "./Link"
+
 const Socials = styled.address`
   margin: 0;
   padding: 4rem 0;
@@ -26,10 +28,7 @@ const Social = styled.li`
   margin: 0.1rem 0;
 `
 
-const SocialLink = styled.a.attrs({
-  target: "_blank",
-  rel: "noreferrer",
-})`
+const SocialLink = styled(Link)`
   margin: 0 1rem;
   color: white;
   text-decoration: none;
