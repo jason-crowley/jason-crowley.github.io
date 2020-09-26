@@ -11,7 +11,7 @@ const Link = styled.a.attrs({
     color: dodgerblue;
   }
 
-  transition: color 0.1s ease;
+  transition: color 0.2s ease;
 `
 
 export default Link

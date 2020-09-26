@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import * as Card from "./Card"
 import Tech from "./Tech"
+import Link from "./Link"
 
 const Logo = styled.div`
   margin-right: 1rem;
@@ -23,15 +24,21 @@ const ExperienceHeader = styled(Card.Header)`
   align-items: center;
 `
 
-const ExperienceCard = ({ logo, company, position, tech, children }) => (
+const ExperienceLink = styled(Link)`
+  text-decoration: none;
+`
+
+const ExperienceCard = ({ logo, company, position, link, tech, children }) => (
   <Card.Body as="li">
-    <ExperienceHeader>
-      <Logo>{logo}</Logo>
-      <div>
-        <Company>{company}</Company>
-        <Position>{position}</Position>
-      </div>
-    </ExperienceHeader>
+    <ExperienceLink href={link}>
+      <ExperienceHeader>
+        <Logo>{logo}</Logo>
+        <div>
+          <Company>{company}</Company>
+          <Position>{position}</Position>
+        </div>
+      </ExperienceHeader>
+    </ExperienceLink>
     <Card.Content>
       {children}
       <Tech tech={tech} />

@@ -19,6 +19,7 @@ const Experience = () => (
         logo={<MITRELogo />}
         company="The MITRE Corporation"
         position="2020 // Healthcare Software Developer Intern"
+        link="https://www.mitre.org/"
         tech={[
           "React",
           "Bootstrap",
@@ -62,6 +63,7 @@ const Experience = () => (
         logo={<BCHLogo />}
         company="Boston Children's Hospital"
         position="2019 // Computational Health Informatics Intern"
+        link="http://www.childrenshospital.org/chip"
         tech={["React", "SMART-on-FHIR", "Material-UI", "VictoryCharts"]}
       >
         <ul>
@@ -94,6 +96,7 @@ const Experience = () => (
         logo={<KTBYTELogo />}
         company="KTBYTE"
         position="2018 // Teaching Assistant"
+        link="https://www.ktbyte.com/"
         tech={["Java", "JavaBlocks", "Scratch", "Processing"]}
       >
         <ul>
