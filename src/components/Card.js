@@ -1,6 +1,8 @@
 import React, { useState, useRef, useLayoutEffect } from "react"
 import styled from "styled-components"
 
+import { hoverLift } from "../styles/mixins"
+
 export const Body = styled.div`
   padding: 0;
   border: 0.2px solid #eee;
@@ -16,6 +18,8 @@ export const Body = styled.div`
   &:last-child {
     margin-bottom: 1.45rem;
   }
+
+  ${hoverLift(0, 3)}
 `
 
 export const Header = styled.div`
