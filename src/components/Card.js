@@ -59,3 +59,46 @@ export const Collapse = ({ expanded, children }) => {
     </Collapsing>
   )
 }
+
+const Arrow = styled.svg.attrs({
+  focusable: "false",
+  viewBox: "0 0 24 24",
+  "aria-hidden": "true",
+})`
+  fill: rgba(0, 0, 0, 0.54);
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  user-select: none;
+`
+
+const ArrowButton = styled.button.attrs({ type: "button" })`
+  margin-left: auto;
+  padding: 12px;
+
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transform: rotate(${props => (props.expanded ? 180 : 0)}deg);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+`
+
+export const Button = ({ expanded = false, onClick }) => (
+  <ArrowButton expanded={expanded} onClick={onClick}>
+    <div style={{ display: "flex" }}>
+      <Arrow>
+        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+      </Arrow>
+    </div>
+  </ArrowButton>
+)
