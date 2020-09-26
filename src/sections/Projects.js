@@ -5,9 +5,10 @@ import SectionHeading from "../components/SectionHeading"
 import SectionList from "../components/SectionList"
 import ProjectCard from "../components/ProjectCard"
 
+import Weenix from "../components/screenshots/Weenix"
 import SMARTPatientData from "../components/screenshots/SMARTPatientData"
 import StormRouter from "../components/screenshots/StormRouter"
-import Weenix from "../components/screenshots/Weenix"
+import HappyLog from "../components/screenshots/HappyLog"
 
 const Projects = () => (
   <Section>
@@ -55,6 +56,7 @@ const Projects = () => (
           A mental health web app to track and provide analytics for
           fluctuations in happiness of the user from day to day
         </p>
+        <HappyLog />
       </ProjectCard>
       <ProjectCard
         title="Portfolio Website"
