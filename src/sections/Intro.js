@@ -27,8 +27,12 @@ const PositionedWaves = styled(Waves)`
 `
 
 const IntroHeading = styled.h1`
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
+
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
 
   padding: 1rem;
   text-shadow: 0 0 0 rgba(0,0,0,0.6);
