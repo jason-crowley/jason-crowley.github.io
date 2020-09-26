@@ -1,0 +1,574 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.dbe4baa00734c9bf2903.css">@font-face{font-family:Ubuntu;font-style:normal;font-display:swap;font-weight:300;src:local("Ubuntu Light "),local("Ubuntu-Light"),url(/static/ubuntu-latin-300-16a73d944d9825af5a5c1a1f55de8f28.woff2) format("woff2"),url(/static/ubuntu-latin-300-f47318810718978402787f6c97d80b3c.woff) format("woff")}@font-face{font-family:Ubuntu;font-style:italic;font-display:swap;font-weight:300;src:local("Ubuntu Light italic"),local("Ubuntu-Lightitalic"),url(/static/ubuntu-latin-300italic-094f326bbf5d701e828be07645618e13.woff2) format("woff2"),url(/static/ubuntu-latin-300italic-1f11b1e747c45516b1a5478480d6cedd.woff) format("woff")}@font-face{font-family:Ubuntu;font-style:normal;font-display:swap;font-weight:400;src:local("Ubuntu Regular "),local("Ubuntu-Regular"),url(/static/ubuntu-latin-400-5b23eeb3a32b30e91682d601535d2a89.woff2) format("woff2"),url(/static/ubuntu-latin-400-1e926e228a9e2e1e77034f624211e2b4.woff) format("woff")}@font-face{font-family:Ubuntu;font-style:italic;font-display:swap;font-weight:400;src:local("Ubuntu Regular italic"),local("Ubuntu-Regularitalic"),url(/static/ubuntu-latin-400italic-ff2b5b4da106e880a3f3733fd5d77ceb.woff2) format("woff2"),url(/static/ubuntu-latin-400italic-27149a968393dbdc0d872f05f177e843.woff) format("woff")}@font-face{font-family:Ubuntu;font-style:normal;font-display:swap;font-weight:500;src:local("Ubuntu Medium "),local("Ubuntu-Medium"),url(/static/ubuntu-latin-500-b4e565dcfc8f6cb332be0fc03302ad99.woff2) format("woff2"),url(/static/ubuntu-latin-500-e5613b0c875443174f948840c8ce07f6.woff) format("woff")}@font-face{font-family:Ubuntu;font-style:italic;font-display:swap;font-weight:500;src:local("Ubuntu Medium italic"),local("Ubuntu-Mediumitalic"),url(/static/ubuntu-latin-500italic-657fed7d867932571e9fa5fab260ed90.woff2) format("woff2"),url(/static/ubuntu-latin-500italic-f068ac523f3d278ff11cfa4010af4d2a.woff) format("woff")}@font-face{font-family:Ubuntu;font-style:normal;font-display:swap;font-weight:700;src:local("Ubuntu Bold "),local("Ubuntu-Bold"),url(/static/ubuntu-latin-700-b91fae466c698c775adb2ae92cecc8b2.woff2) format("woff2"),url(/static/ubuntu-latin-700-669545b14b8032954bfe46909785c19f.woff) format("woff")}@font-face{font-family:Ubuntu;font-style:italic;font-display:swap;font-weight:700;src:local("Ubuntu Bold italic"),local("Ubuntu-Bolditalic"),url(/static/ubuntu-latin-700italic-c02fdf8544ee71a10050b800f1c146b1.woff2) format("woff2"),url(/static/ubuntu-latin-700italic-ad7e4c2f2d357a1eb39a11ecc1ad43aa.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:100;src:local("Lato Thin "),local("Lato-Thin"),url(/static/lato-latin-100-9ca14b8703044ec44627982d6d0e1e44.woff2) format("woff2"),url(/static/lato-latin-100-4dfdd1c035c641accc4f3fedb7b73055.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:100;src:local("Lato Thin italic"),local("Lato-Thinitalic"),url(/static/lato-latin-100italic-de3428c265cecf1856805f21f274bb82.woff2) format("woff2"),url(/static/lato-latin-100italic-83a45512c894889710e9966b9edddc6d.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:300;src:local("Lato Light "),local("Lato-Light"),url(/static/lato-latin-300-98d8cf792834c0bef59c2be99dc3533d.woff2) format("woff2"),url(/static/lato-latin-300-656963c4beb814e754e38478fcaa0439.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:300;src:local("Lato Light italic"),local("Lato-Lightitalic"),url(/static/lato-latin-300italic-a21767e20d27a9c06007c981a8e5f827.woff2) format("woff2"),url(/static/lato-latin-300italic-8e90b967ea69fc68b130d36cc34d41c0.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:400;src:local("Lato Regular "),local("Lato-Regular"),url(/static/lato-latin-400-b4d2c4c39853ee244272c04999b230ba.woff2) format("woff2"),url(/static/lato-latin-400-b8ee546acd6cc0c49f42ad3d48ef244f.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:400;src:local("Lato Regular italic"),local("Lato-Regularitalic"),url(/static/lato-latin-400italic-117e995c97eab30fb92843616018d1f1.woff2) format("woff2"),url(/static/lato-latin-400italic-e652470b9572b86907b77a97f40dc915.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:700;src:local("Lato Bold "),local("Lato-Bold"),url(/static/lato-latin-700-1efbd38aa76ddae2580fedf378276333.woff2) format("woff2"),url(/static/lato-latin-700-874b8e7bc7e8d1507b50f56bc6c9b536.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:700;src:local("Lato Bold italic"),local("Lato-Bolditalic"),url(/static/lato-latin-700italic-5ce0990b59e1ed40e05327f625a24c4a.woff2) format("woff2"),url(/static/lato-latin-700italic-9e9a574493d4cd2fa62380f376461941.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:900;src:local("Lato Black "),local("Lato-Black"),url(/static/lato-latin-900-947e87c53b5765bfc8982613ccd789e9.woff2) format("woff2"),url(/static/lato-latin-900-a82ff6ac9208656f9a21a65dfacbcae3.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:900;src:local("Lato Black italic"),local("Lato-Blackitalic"),url(/static/lato-latin-900italic-bd86aaa72d23c91de85390a93aa6bef2.woff2) format("woff2"),url(/static/lato-latin-900italic-73d7130e1dc196d25bb35faf2afbbb43.woff) format("woff")}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt"}img{max-width:100%;padding:0;margin:0 0 1.45rem}h1{font-size:2.25rem}h1,h2{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{padding:0;margin:0 0 1.45rem}ol,ul{padding:0;margin:0 0 1.45rem 1.45rem;list-style-position:outside;list-style-image:none}dd,dl,figure,p{padding:0;margin:0 0 1.45rem}pre{margin:0 0 1.45rem;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}table{font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset,table{padding:0;margin:0 0 1.45rem}blockquote{padding:0;margin:0 1.45rem 1.45rem}form,iframe,noscript{padding:0;margin:0 0 1.45rem}hr{padding:0;margin:0 0 calc(1.45rem - 1px);background:rgba(0,0,0,.2);border:none;height:1px}address{padding:0;margin:0 0 1.45rem}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:.2em 0}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}.header{position:relative;background:linear-gradient(60deg,#543ab7,#00acc1);color:#fff}.flex,.header{text-align:center}.flex{display:flex;justify-content:center;align-items:center}.waves{position:relative;width:100%;height:15vh;margin-bottom:-7px;min-height:100px;max-height:150px}.parallax>use{animation:move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite}.parallax>use:first-child{animation-delay:-2s;animation-duration:7s}.parallax>use:nth-child(2){animation-delay:-3s;animation-duration:10s}.parallax>use:nth-child(3){animation-delay:-4s;animation-duration:13s}.parallax>use:nth-child(4){animation-delay:-5s;animation-duration:20s}@keyframes move-forever{0%{transform:translate3d(-90px,0,0)}to{transform:translate3d(85px,0,0)}}@media (max-width:768px){.waves{height:40px;min-height:40px}}</style><meta name="generator" content="Gatsby 2.23.12"/><title data-react-helmet="true">Jason Crowley | Portfolio</title><meta data-react-helmet="true" name="description" content="A portfolio of projects written in React, JavaScript, Python and more, developed by Jason Crowley"/><meta data-react-helmet="true" property="og:title" content="Home"/><meta data-react-helmet="true" property="og:description" content="A portfolio of projects written in React, JavaScript, Python and more, developed by Jason Crowley"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Jason Crowley"/><meta data-react-helmet="true" name="twitter:title" content="Home"/><meta data-react-helmet="true" name="twitter:description" content="A portfolio of projects written in React, JavaScript, Python and more, developed by Jason Crowley"/><link rel="icon" href="/favicon-32x32.png?v=ba8794756f77bc529f31cb6bb9bb6518"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#1e90ff"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=ba8794756f77bc529f31cb6bb9bb6518"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=ba8794756f77bc529f31cb6bb9bb6518"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=ba8794756f77bc529f31cb6bb9bb6518"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=ba8794756f77bc529f31cb6bb9bb6518"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=ba8794756f77bc529f31cb6bb9bb6518"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=ba8794756f77bc529f31cb6bb9bb6518"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=ba8794756f77bc529f31cb6bb9bb6518"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=ba8794756f77bc529f31cb6bb9bb6518"/><style data-styled="" data-styled-version="5.1.1">.jHOtdY{margin:0;padding:0;}/*!sc*/
+data-styled.g1[id="Layout__Header-sc-123tbf3-0"]{content:"jHOtdY,"}/*!sc*/
+.laGElp{margin:0;padding:0;}/*!sc*/
+data-styled.g2[id="Layout__Main-sc-123tbf3-1"]{content:"laGElp,"}/*!sc*/
+.gqAJKM{margin:0;padding:0;}/*!sc*/
+data-styled.g3[id="Layout__Footer-sc-123tbf3-2"]{content:"gqAJKM,"}/*!sc*/
+.lbsSZU{color:black;-webkit-transition:color 0.1s ease;transition:color 0.1s ease;}/*!sc*/
+.lbsSZU:hover,.lbsSZU:active{color:dodgerblue;}/*!sc*/
+data-styled.g4[id="Link-cx0v57-0"]{content:"lbsSZU,"}/*!sc*/
+.kJvVJz{margin:0;padding:4rem 0;background-color:#1a202c;font-style:normal;}/*!sc*/
+data-styled.g5[id="Footer__Socials-sc-1xqajj9-0"]{content:"kJvVJz,"}/*!sc*/
+.bvozHr{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 auto;padding:0 1rem;max-width:960px;list-style-type:none;}/*!sc*/
+data-styled.g6[id="Footer__SocialList-sc-1xqajj9-1"]{content:"bvozHr,"}/*!sc*/
+.bHnODW{margin:0.1rem 0;}/*!sc*/
+data-styled.g7[id="Footer__Social-sc-1xqajj9-2"]{content:"bHnODW,"}/*!sc*/
+.jRffev{color:black;-webkit-transition:color 0.1s ease;transition:color 0.1s ease;margin:0 1rem;color:white;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.jRffev:hover,.jRffev:active{color:dodgerblue;}/*!sc*/
+data-styled.g8[id="Footer__SocialLink-sc-1xqajj9-3"]{content:"jRffev,"}/*!sc*/
+.jnPPDG{margin-left:0.5rem;}/*!sc*/
+data-styled.g9[id="Footer__LinkText-sc-1xqajj9-4"]{content:"jnPPDG,"}/*!sc*/
+.GsXo{display:inline-block;-webkit-animation:kiTILF 5s ease-in-out 0.5s infinite;animation:kiTILF 5s ease-in-out 0.5s infinite;}/*!sc*/
+data-styled.g10[id="Hello__Container-r6md7h-0"]{content:"GsXo,"}/*!sc*/
+.elaTya{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:4rem;height:65vh;min-height:65vh;position:relative;background:linear-gradient( 60deg,rgba(84,58,183,1) 0%,rgba(0,172,193,1) 100% );}/*!sc*/
+data-styled.g11[id="Intro__WavesContainer-sc-1r7zkeg-0"]{content:"elaTya,"}/*!sc*/
+.bueow{position:absolute;left:0;right:0;bottom:0;}/*!sc*/
+data-styled.g12[id="Intro__PositionedWaves-sc-1r7zkeg-1"]{content:"bueow,"}/*!sc*/
+.bGfnwD{font-size:4rem;color:white;padding:1rem;text-shadow:0 0 0 rgba(0,0,0,0.6);-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 0.3s ease;transition:all 0.3s ease;}/*!sc*/
+.bGfnwD:hover{padding:2rem;text-shadow:5px 3px 2px rgba(0,0,0,0.2);-webkit-transform:translate(-8px,-4px);-ms-transform:translate(-8px,-4px);transform:translate(-8px,-4px);}/*!sc*/
+data-styled.g13[id="Intro__IntroHeading-sc-1r7zkeg-2"]{content:"bGfnwD,"}/*!sc*/
+.iUQULs{margin:0 auto 4rem;padding:0 1rem;max-width:960px;}/*!sc*/
+data-styled.g14[id="Section-sc-3lfkv3-0"]{content:"iUQULs,"}/*!sc*/
+.dPQlOT{display:inline-block;padding:0.2rem 1rem 0.25rem;color:#fff;background:linear-gradient(265.21deg,#53aafa 32.87%,#00c2ff 68.9%);border-radius:3px;}/*!sc*/
+data-styled.g15[id="SectionHeading-sc-1lgexs-0"]{content:"dPQlOT,"}/*!sc*/
+.hMGGPv{margin:0;padding:0;}/*!sc*/
+data-styled.g16[id="SectionList-sc-1o1oc81-0"]{content:"hMGGPv,"}/*!sc*/
+.iVwsGk{padding:0;border:0.2px solid #eee;border-radius:3px;box-shadow:0 3px 5px rgba(0,0,0,0.07);list-style-type:none;-webkit-transition:box-shadow 0.1s linear;transition:box-shadow 0.1s linear;-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;-webkit-transition-property:-webkit-transform,box-shadow;-webkit-transition-property:transform,box-shadow;transition-property:transform,box-shadow;}/*!sc*/
+.iVwsGk:hover{box-shadow:0 5px 10px rgba(0,0,0,0.2);}/*!sc*/
+.iVwsGk:last-child{margin-bottom:1.45rem;}/*!sc*/
+.iVwsGk:hover{position:relative;-webkit-transform:translate(0px,-3px);-ms-transform:translate(0px,-3px);transform:translate(0px,-3px);box-shadow:0 5px 10px rgba(0,0,0,0.2);}/*!sc*/
+.iVwsGk:hover:after{position:absolute;content:"";width:100%;top:0;left:0;bottom:-1em;z-index:-1;}/*!sc*/
+data-styled.g17[id="Card__Body-sc-1gb6pm9-0"]{content:"iVwsGk,"}/*!sc*/
+.jOYDdy{margin:0;padding:1rem;}/*!sc*/
+data-styled.g18[id="Card__Header-sc-1gb6pm9-1"]{content:"jOYDdy,"}/*!sc*/
+.iaALdf{padding:0 1rem 1rem;}/*!sc*/
+data-styled.g19[id="Card__Content-sc-1gb6pm9-2"]{content:"iaALdf,"}/*!sc*/
+.cYMJrs{margin:0;padding:0;max-height:0px;overflow:hidden;-webkit-transition:max-height 0.4s ease-in-out;transition:max-height 0.4s ease-in-out;}/*!sc*/
+data-styled.g20[id="Card__Collapsing-sc-1gb6pm9-3"]{content:"cYMJrs,"}/*!sc*/
+.gJijhR{fill:rgba(0,0,0,0.54);width:1em;height:1em;display:inline-block;font-size:1.5rem;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}/*!sc*/
+data-styled.g21[id="Card__Arrow-sc-1gb6pm9-4"]{content:"gJijhR,"}/*!sc*/
+.jXbpab{margin-left:auto;padding:12px;background-color:white;outline:none;border:none;border-radius:50%;cursor:pointer;-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:-webkit-transform 150ms cubic-bezier(0.4,0,0.2,1) 0ms,background-color 150ms cubic-bezier(0.4,0,0.2,1) 0ms;-webkit-transition:transform 150ms cubic-bezier(0.4,0,0.2,1) 0ms,background-color 150ms cubic-bezier(0.4,0,0.2,1) 0ms;transition:transform 150ms cubic-bezier(0.4,0,0.2,1) 0ms,background-color 150ms cubic-bezier(0.4,0,0.2,1) 0ms;}/*!sc*/
+.jXbpab:hover{background-color:rgba(0,0,0,0.04);}/*!sc*/
+data-styled.g22[id="Card__ArrowButton-sc-1gb6pm9-5"]{content:"jXbpab,"}/*!sc*/
+.VDFHN{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0;margin-top:-0.3rem;list-style-type:none;}/*!sc*/
+data-styled.g23[id="Tech__TechList-sc-1dkq35h-0"]{content:"VDFHN,"}/*!sc*/
+.fBnAcv{font-size:0.8rem;margin:0.3rem 0.5rem 0 0;padding:0.1rem 0.7rem;background-color:#f1f8ff;color:dodgerblue;border:0.5px solid dodgerblue;border-radius:3px;}/*!sc*/
+data-styled.g24[id="Tech__TechItem-sc-1dkq35h-1"]{content:"fBnAcv,"}/*!sc*/
+.eDTjGs{margin-right:1rem;min-width:80px;}/*!sc*/
+data-styled.g25[id="ExperienceCard__Logo-sc-1fif3nn-0"]{content:"eDTjGs,"}/*!sc*/
+.kJmpKV{margin:0;}/*!sc*/
+data-styled.g26[id="ExperienceCard__Company-sc-1fif3nn-1"]{content:"kJmpKV,"}/*!sc*/
+.cEuTTE{margin:0;font-weight:normal;}/*!sc*/
+data-styled.g27[id="ExperienceCard__Position-sc-1fif3nn-2"]{content:"cEuTTE,"}/*!sc*/
+.fesuLh{margin:0;padding:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+data-styled.g28[id="ExperienceCard__ExperienceHeader-sc-1fif3nn-3"]{content:"fesuLh,"}/*!sc*/
+.heKVZf{display:inline-block;margin:0;font-size:1rem;}/*!sc*/
+data-styled.g29[id="ProjectCard__Title-sc-1gpim8b-0"]{content:"heKVZf,"}/*!sc*/
+.iUNAnY{display:inline;margin:0;font-weight:normal;}/*!sc*/
+data-styled.g30[id="ProjectCard__Description-sc-1gpim8b-1"]{content:"iUNAnY,"}/*!sc*/
+.kxXfOj{margin:0;padding:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 1rem 0 0;}/*!sc*/
+data-styled.g31[id="ProjectCard__ProjectHeader-sc-1gpim8b-2"]{content:"kxXfOj,"}/*!sc*/
+h1,h2,h3,h4,h5,h6{font-family:Ubuntu,sans-serif;}/*!sc*/
+body{font-family:Lato,sans-serif;}/*!sc*/
+data-styled.g32[id="sc-global-dECOBh1"]{content:"sc-global-dECOBh1,"}/*!sc*/
+@-webkit-keyframes kiTILF{5%{-webkit-transform:rotate(20deg);-ms-transform:rotate(20deg);transform:rotate(20deg);}8%{-webkit-transform:rotate(-15deg);-ms-transform:rotate(-15deg);transform:rotate(-15deg);}11%{-webkit-transform:rotate(10deg);-ms-transform:rotate(10deg);transform:rotate(10deg);}14%{-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);}17%{-webkit-transform:rotate(5deg);-ms-transform:rotate(5deg);transform:rotate(5deg);}20%{-webkit-transform:rotate(-5deg);-ms-transform:rotate(-5deg);transform:rotate(-5deg);}23%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}}/*!sc*/
+@keyframes kiTILF{5%{-webkit-transform:rotate(20deg);-ms-transform:rotate(20deg);transform:rotate(20deg);}8%{-webkit-transform:rotate(-15deg);-ms-transform:rotate(-15deg);transform:rotate(-15deg);}11%{-webkit-transform:rotate(10deg);-ms-transform:rotate(10deg);transform:rotate(10deg);}14%{-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);}17%{-webkit-transform:rotate(5deg);-ms-transform:rotate(5deg);transform:rotate(5deg);}20%{-webkit-transform:rotate(-5deg);-ms-transform:rotate(-5deg);transform:rotate(-5deg);}23%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}}/*!sc*/
+data-styled.g33[id="sc-keyframes-kiTILF"]{content:"kiTILF,"}/*!sc*/
+</style><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link as="script" rel="preload" href="/webpack-runtime-49a85d9f83de502fc754.js"/><link as="script" rel="preload" href="/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/app-8b96a315fda5853eab34.js"/><link as="script" rel="preload" href="/styles-89fd2ae28bdf06750a71.js"/><link as="script" rel="preload" href="/a9a7754c-4661b79a55a269b04aa8.js"/><link as="script" rel="preload" href="/cb1608f2-cfbcec3c7451c899b837.js"/><link as="script" rel="preload" href="/commons-3d01babe319215f70c0c.js"/><link as="script" rel="preload" href="/component---src-pages-index-js-28a8aad2f19d8ec7f6a8.js"/><link as="fetch" rel="preload" href="/page-data/index/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><header class="Layout__Header-sc-123tbf3-0 jHOtdY"><div class="Intro__WavesContainer-sc-1r7zkeg-0 elaTya"><h1 class="Intro__IntroHeading-sc-1r7zkeg-2 bGfnwD"><span role="img" aria-label="waving hand" class="Hello__Container-r6md7h-0 GsXo">👋</span> Hi, I&#x27;m Jason Crowley</h1><div class="Intro__PositionedWaves-sc-1r7zkeg-1 bueow"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7"></use><use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"></use><use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"></use><use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"></use></g></svg></div></div></header><main class="Layout__Main-sc-123tbf3-1 laGElp"><section class="Section-sc-3lfkv3-0 iUQULs"><h1 class="SectionHeading-sc-1lgexs-0 dPQlOT">About Me</h1><p>I&#x27;m a Computer Science Undergraduate Student at Brown University. I am currently taking courses in <em>AI/ML</em> as well as exploring the<!-- --> <em>design and construction of computer systems</em>. I enjoy attending hackathons to put my skills to the test!</p><p><strong>I love to learn.</strong> I am never satified with just scratching the surface of a subject. When I tackle learning something new, I try to dive deep and understand each fundamental concept separately before I try to understand it as a whole.</p><p><strong>I&#x27;m a team player.</strong> I pull my own weight, and I&#x27;m conscious about making code clean, tested, and well-documented for others. I get along well with my peers, and I&#x27;m understanding to other people&#x27;s needs.</p><p><strong>I&#x27;m not one to quit.</strong> I&#x27;m motivated and like to see things through to the end. I&#x27;m constantly pushing myself to improve my skills and efficiency as a developer.</p></section><section class="Section-sc-3lfkv3-0 iUQULs"><h1 class="SectionHeading-sc-1lgexs-0 dPQlOT">Experience</h1><ol class="SectionList-sc-1o1oc81-0 hMGGPv"><li class="Card__Body-sc-1gb6pm9-0 iVwsGk"><div class="Card__Header-sc-1gb6pm9-1 ExperienceCard__ExperienceHeader-sc-1fif3nn-3 fesuLh"><div class="ExperienceCard__Logo-sc-1fif3nn-0 eDTjGs"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:80px;height:33px"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABN0lEQVQoz52Sv0tCURiGz1WhVCJwsEUbM4iiqBCsBkOiJYQ4h6DBrSVoqaVoCGuIQBCS87U5N0YYOLQVRLT2b9SfED7n/kgdHOrCw/t+7z3n5Z57r1Lu0qJ+L2PVvy4d7YvKtHgw7c/GxtAsmgoyuwSrMEu2AhswDotkW5Dtl0bN2k6y+RsWlJF15k90m7kFgv8ga1DyiG+iD+gz9+rkc2GHx9NILDiqLMMPC65QSuwXesjGM7J5/AW+TN5mPsC/kHVgH58PX5fnWuPhkY/wt+AWvqHX6D2ccK+E3rChAq/MrLGbZF3Yw+cGCiUeDu44Oyy4RM8pdP7df0otRbROXiU/RmvAseUJTvEz/UIj0dedgjE2JMgSlCQhTzaBkksGn/bfdbA+hy/AGmSGv7SRv/0iu3cjf5seZlOJ6nFvEDcAAAAASUVORK5CYII=" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/54eb1f7de45e3bb79a2ed10fe80fcac4/34ca5/mitre-logo.png 1x,
+/static/54eb1f7de45e3bb79a2ed10fe80fcac4/16c7d/mitre-logo.png 1.5x,
+/static/54eb1f7de45e3bb79a2ed10fe80fcac4/e43a9/mitre-logo.png 2x" /><img loading="lazy" width="80" height="33" srcset="/static/54eb1f7de45e3bb79a2ed10fe80fcac4/34ca5/mitre-logo.png 1x,
+/static/54eb1f7de45e3bb79a2ed10fe80fcac4/16c7d/mitre-logo.png 1.5x,
+/static/54eb1f7de45e3bb79a2ed10fe80fcac4/e43a9/mitre-logo.png 2x" src="/static/54eb1f7de45e3bb79a2ed10fe80fcac4/34ca5/mitre-logo.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div><h3 class="ExperienceCard__Company-sc-1fif3nn-1 kJmpKV">The MITRE Corporation</h3><h4 class="ExperienceCard__Position-sc-1fif3nn-2 cEuTTE">2020 // Healthcare Software Developer Intern</h4></div></div><div class="Card__Content-sc-1gb6pm9-2 iaALdf"><ul><li>Practiced scrum on Team<!-- --> <a href="https://github.com/onc-healthit/inferno" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">Inferno</a> <!-- -->of the Open Health Services department</li><li>Ported Inferno&#x27;s<!-- --> <a href="https://inferno.healthit.gov/validator/" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">FHIR validator app</a> <!-- -->to <a href="https://reactjs.org/" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">React</a> and architected form state management to enable dynamic form validation</li><li>Optimized response times on first request by a factor of 3 by refactoring validator service to be eagerly initialized</li><li>Introduced support for validating against 200+ different FHIR Implementation Guides fetched from packages.fhir.org</li><li>Spearheaded development of the<!-- --> <a href="https://www.hl7.org/fhir/fhirpath.html" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">FHIRPath</a> <!-- -->evaluator microservice</li></ul><ul class="Tech__TechList-sc-1dkq35h-0 VDFHN"><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">React</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Bootstrap</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Jest</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">HAPI FHIR</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Spark</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">JUnit</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Docker</li></ul></div></li><li class="Card__Body-sc-1gb6pm9-0 iVwsGk"><div class="Card__Header-sc-1gb6pm9-1 ExperienceCard__ExperienceHeader-sc-1fif3nn-3 fesuLh"><div class="ExperienceCard__Logo-sc-1fif3nn-0 eDTjGs"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:80px;height:41px"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAACGElEQVQoz02RT0gUURzHpw2RbV0k8k20+gZyTYRcld0oqFzUXXZmtENqVIKheF+1DtI/o2TUme3SpZOHokt1iQ4dUjOyOih06lKHTtEl0lXQQ3R5fZ7NQgMffr/v7/f9/d5jnmHwmW6Qg9fwEW4LJ6jRdeH6g8INRkwnqDVd/yA9TTu5wFNL7zA6Hu7QfhInyCB+YijDBKZn6CBcOAlP0HeJt+g/ZFkJblKbxfuY+qXQG2HXPjb7j2h+pulBCl5R+0GsJ56CIotsSDN0Hp0m76bfhZZw6N/CIGKEyTdMT1mahdPoa5y0A71wjl7GdPwR4fhD9PvRV8jHWHoB7eLJh/koswP6hl9IrlJo0wtoNpJ/Yqif3NVD5IMwTX4dStzKZ2aSfIqZBXxF8mHigr6h/kf65yfhMuZRhr9yUCOGJnDoS3Q1McaCODGBboYW/FXoJjCZj+rX6YKXcNHsLWXD134Qvpw+eRZm4IZ+HNA3vQNz4ME4PDf77tcblU/kPVsU5qZhRtjzxboTUwf26jmvDd1OvQ/PAPSQ34MxUZjvJOZgCN9wXetEdG+ZXNmqaVaqOhGsmgn/nXW0rKrQ+xtefI+llIpUDk0qFT1JPeGtNFirO1Hjv++YUjFr/U+8sjAplzd7rA+7WWvtdwp9XC6X89bbbZt4Ri5ttMjFjQ483cSz1vvdTjytcvFXhl6aekEubdryTfmI3vcXCr36iy/WS6cAAAAASUVORK5CYII=" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/affd79be4be04246fe1aef1aeb300b09/34ca5/bch-logo.png 1x,
+/static/affd79be4be04246fe1aef1aeb300b09/16c7d/bch-logo.png 1.5x,
+/static/affd79be4be04246fe1aef1aeb300b09/e43a9/bch-logo.png 2x" /><img loading="lazy" width="80" height="41" srcset="/static/affd79be4be04246fe1aef1aeb300b09/34ca5/bch-logo.png 1x,
+/static/affd79be4be04246fe1aef1aeb300b09/16c7d/bch-logo.png 1.5x,
+/static/affd79be4be04246fe1aef1aeb300b09/e43a9/bch-logo.png 2x" src="/static/affd79be4be04246fe1aef1aeb300b09/34ca5/bch-logo.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div><h3 class="ExperienceCard__Company-sc-1fif3nn-1 kJmpKV">Boston Children&#x27;s Hospital</h3><h4 class="ExperienceCard__Position-sc-1fif3nn-2 cEuTTE">2019 // Computational Health Informatics Intern</h4></div></div><div class="Card__Content-sc-1gb6pm9-2 iaALdf"><ul><li>Trained in FHIR health resource representation and<!-- --> <a href="https://smarthealthit.org/" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">SMART app</a> <!-- -->authentication</li><li>Fetched and processed simulated FHIR health resources in the same format as health data found in EHR databases using JavaScript</li><li>Enabled<!-- --> <a href="http://hl7.org/fhir/smart-app-launch/index.html" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">SMART launch sequence</a> <!-- -->for secure integration from within a hospital EHR context</li><li>Leveraged<!-- --> <a href="https://formidable.com/open-source/victory/" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">Victory Charts</a> <!-- -->library for interactive, responsive, and informative custom charts</li></ul><ul class="Tech__TechList-sc-1dkq35h-0 VDFHN"><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">React</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">SMART-on-FHIR</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Material-UI</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">VictoryCharts</li></ul></div></li><li class="Card__Body-sc-1gb6pm9-0 iVwsGk"><div class="Card__Header-sc-1gb6pm9-1 ExperienceCard__ExperienceHeader-sc-1fif3nn-3 fesuLh"><div class="ExperienceCard__Logo-sc-1fif3nn-0 eDTjGs"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:80px;height:26px"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABT0lEQVQoz6WRTSuEURTHD0UxZUdKGE3ytmAxUYpYeGkanpGZMWpkIWamUcokC4UhshgrNpJYSLKw9yls7HwS9z634/eMWVgqt379z7n33P99OWJiYk1cnF2q/1JP1HqSkf8MW+hzdjOsZk6sbkfUppvS1fmEDJmE9MIE8RbMwij5BtqGjkAT8RhkiLPogPgXKeffldQ/nrf6eqZmSpKqGhheU1RBu+EW4rADN7DOS9ZYPyVegRwcBDViFsS553N1b/dW851qxmUluKHx5JNNudpti9BBXkAfIY9ZO/oODcyPw0zwAvErWeeeyuqXY1ZfjtSmQsmPH5MHuIIQxXvBc9BdDtonPsGwGb2sHeixlkKnxRYHg4YEf2f1cFLtcmPtD+uGKBjGIIz2QwubomgJIswLptGaYRf0kLcKXXYUqlmkKfFql1f/1MzEjwbGv8c3ef7GAUnfnP4AAAAASUVORK5CYII=" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/ac3091155ed8f0f5f571e638fad69744/34ca5/ktbyte-logo.png 1x,
+/static/ac3091155ed8f0f5f571e638fad69744/16c7d/ktbyte-logo.png 1.5x,
+/static/ac3091155ed8f0f5f571e638fad69744/e43a9/ktbyte-logo.png 2x" /><img loading="lazy" width="80" height="26" srcset="/static/ac3091155ed8f0f5f571e638fad69744/34ca5/ktbyte-logo.png 1x,
+/static/ac3091155ed8f0f5f571e638fad69744/16c7d/ktbyte-logo.png 1.5x,
+/static/ac3091155ed8f0f5f571e638fad69744/e43a9/ktbyte-logo.png 2x" src="/static/ac3091155ed8f0f5f571e638fad69744/34ca5/ktbyte-logo.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div><h3 class="ExperienceCard__Company-sc-1fif3nn-1 kJmpKV">KTBYTE</h3><h4 class="ExperienceCard__Position-sc-1fif3nn-2 cEuTTE">2018 // Teaching Assistant</h4></div></div><div class="Card__Content-sc-1gb6pm9-2 iaALdf"><ul><li>Designed lessons to build practice with RGB color values, variables, loops, timing &amp; more</li><li>Instructed kids aged 9–12 in said lessons while encouraging best practices for coding (using Scratch, Java Blocks, and Java)</li></ul><ul class="Tech__TechList-sc-1dkq35h-0 VDFHN"><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Java</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">JavaBlocks</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Scratch</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Processing</li></ul></div></li></ol></section><section class="Section-sc-3lfkv3-0 iUQULs"><h1 class="SectionHeading-sc-1lgexs-0 dPQlOT">Projects</h1><ol class="SectionList-sc-1o1oc81-0 hMGGPv"><li class="Card__Body-sc-1gb6pm9-0 iVwsGk"><div class="Card__Header-sc-1gb6pm9-1 ProjectCard__ProjectHeader-sc-1gpim8b-2 kxXfOj"><div class="Card__Header-sc-1gb6pm9-1 jOYDdy"><h3 class="ProjectCard__Title-sc-1gpim8b-0 heKVZf"><a href="https://github.com/brown-cs1690/handout/wiki" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">Weenix</a></h3> <!-- -->— <h4 class="ProjectCard__Description-sc-1gpim8b-1 iUNAnY">A mini operating system inspired by Unix</h4></div><button type="button" class="Card__ArrowButton-sc-1gb6pm9-5 jXbpab"><div style="display:flex"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" class="Card__Arrow-sc-1gb6pm9-4 gJijhR"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></div></button></div><div class="Card__Collapsing-sc-1gb6pm9-3 cYMJrs"><div class="Card__Content-sc-1gb6pm9-2 iaALdf"><div style="margin:0 auto;max-width:50%"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:78.75%"></div><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB2UlEQVQ4y41UyW7iQBQEg4GwrwKziH3fkRCgXPmknHOKlHMUpODAgQNcEolfrOl6wRkGyMSWSm1b3eV6r+rZsX16xPPLA17NN7yvTWw2GxwOB+z3BxyPR3x+fGC322G1WmG73QrW6zVM07wJh7pwDsMwUK1WkclkMJlM0Gq1BNlsFvF4HIFAAJdn/oFL0+TG6XTKmk6nhaBYLGI4HKLb7aLX6yEYDH4f4t6f4LCIrJXKSJjL5dBoNLBYLFAul+UDVKmdBPwIi+i8ZBLw8Hg8Rq1WE9WFQgHJZPL/ZLcIY7EYSqWSKOr3+1I2CS/32SakCiqk0vl8jnq9Lj1st9u/G/KFvw9ut1uc7XQ6QjidToVoNBphuVwin89D13X4fD4hJ66URyIReL1e2RiNRqXcSqUiSpvNpkSIZXPlR0KhkDieSCQkRlcmGUZGlJDY5XJdlcB37Kut/lklUwFdDIfDVxuonkrOo/UrIfs2GAwkf5cbrFbYVsjGzmYzaT5DbE2Epcbj8XwrtAWWyR5yKkh6q2ROj23CsnK0efoBdNTcxpV7dJjKuQaVq357+fvCvSqzwUioaRipPkaVYp9S5VdZ89/dQVcua+yligd/JG7NqaAJ9NO9lY5UKoU/cF+MjceY5/YAAAAASUVORK5CYII=" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/ae31287daebe9e50e561a3b18f2a2181/2b087/weenix.png 240w,
+/static/ae31287daebe9e50e561a3b18f2a2181/19ca5/weenix.png 480w,
+/static/ae31287daebe9e50e561a3b18f2a2181/40ffe/weenix.png 960w,
+/static/ae31287daebe9e50e561a3b18f2a2181/26912/weenix.png 1282w" sizes="(max-width: 960px) 100vw, 960px" /><img loading="lazy" sizes="(max-width: 960px) 100vw, 960px" srcset="/static/ae31287daebe9e50e561a3b18f2a2181/2b087/weenix.png 240w,
+/static/ae31287daebe9e50e561a3b18f2a2181/19ca5/weenix.png 480w,
+/static/ae31287daebe9e50e561a3b18f2a2181/40ffe/weenix.png 960w,
+/static/ae31287daebe9e50e561a3b18f2a2181/26912/weenix.png 1282w" src="/static/ae31287daebe9e50e561a3b18f2a2181/40ffe/weenix.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><p>This semester-long project consisted of five parts:</p><ul><li><strong>Procs:</strong> Threads, processes, and synchronization primitives.</li><li><strong>Drivers:</strong> Device drivers for terminals, disks, and the memory devices <code>/dev/zero</code> and <code>/dev/null</code>.</li><li><strong>Virtual File System (VFS):</strong> A common interface between the operating system kernel and the various file systems.</li><li><strong>System V File System (S5FS):</strong> A file system based on the original Unix file system.</li><li><strong>Virtual Memory (VM):</strong> The final culmination of a semester&#x27;s work. This included implementing virtual memory maps, handling page faults, creating copy-on-write and anonymous memory objects, setting up system calls, and running userland code!</li></ul><p>In the end, my operating system was able to sustain multiple fork bombs and stress tests in parallel!</p><ul class="Tech__TechList-sc-1dkq35h-0 VDFHN"><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">C</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Makefile</li></ul></div></div></li><li class="Card__Body-sc-1gb6pm9-0 iVwsGk"><div class="Card__Header-sc-1gb6pm9-1 ProjectCard__ProjectHeader-sc-1gpim8b-2 kxXfOj"><div class="Card__Header-sc-1gb6pm9-1 jOYDdy"><h3 class="ProjectCard__Title-sc-1gpim8b-0 heKVZf"><a href="https://github.com/jason-crowley/smart-patient-data" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">SMART Patient Data Analytics</a></h3> <!-- -->— <h4 class="ProjectCard__Description-sc-1gpim8b-1 iUNAnY">A patient analytics dashboard for practitioners</h4></div><button type="button" class="Card__ArrowButton-sc-1gb6pm9-5 jXbpab"><div style="display:flex"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" class="Card__Arrow-sc-1gb6pm9-4 gJijhR"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></div></button></div><div class="Card__Collapsing-sc-1gb6pm9-3 cYMJrs"><div class="Card__Content-sc-1gb6pm9-2 iaALdf"><div style="margin:0 auto;max-width:50%"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:55.83333333333333%"></div><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABXUlEQVQoz3VS2U4DMQzM/38KEhVVKSAQv4H6gEp5RC1i783hxHi8yW4rSqSR1571+EjM7f2Ob9ZvvNq+8+b5wOunD7573KtdsP8bE3+12SmHvO3LgR9eP9lwssxxZGbi6SSBzfb8eEG4iNihyvHlmL4fuGk6Lhao4Q8jOx/YC4hi5lv1g/jeEx+/jlxVjfBJ4QOxaduWrbUcc0NBPig7zjkRaaTZNPceYlTBKPbneOJhGObuEDNd12kiRKxUiBDLAuM4SgeVck44L0KlWJLk6vTNdV2rkMYkz6CC916D1mE8UsAPIaio0zERE2QeQDPgkQ+gMaPdZQGSBIItfrazSJxGLVzf9yp6DoP9oRNtmcSG5SYRB5/yOMn7i30VQdgCHVkFkSBVFeWhiIAKYkeCJP+lvN9/BZGkowGSEMuYeSwUI8SvcFcFnZveGZ0tm/IF6JsLNO2Wlv2WQtcEfwFc1lOA425PIwAAAABJRU5ErkJggg==" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/6aa9a0d01be872911948d85108e6b8b7/2b087/smart-patient-data.png 240w,
+/static/6aa9a0d01be872911948d85108e6b8b7/19ca5/smart-patient-data.png 480w,
+/static/6aa9a0d01be872911948d85108e6b8b7/40ffe/smart-patient-data.png 960w,
+/static/6aa9a0d01be872911948d85108e6b8b7/3bf79/smart-patient-data.png 1440w,
+/static/6aa9a0d01be872911948d85108e6b8b7/7deef/smart-patient-data.png 1599w" sizes="(max-width: 960px) 100vw, 960px" /><img loading="lazy" sizes="(max-width: 960px) 100vw, 960px" srcset="/static/6aa9a0d01be872911948d85108e6b8b7/2b087/smart-patient-data.png 240w,
+/static/6aa9a0d01be872911948d85108e6b8b7/19ca5/smart-patient-data.png 480w,
+/static/6aa9a0d01be872911948d85108e6b8b7/40ffe/smart-patient-data.png 960w,
+/static/6aa9a0d01be872911948d85108e6b8b7/3bf79/smart-patient-data.png 1440w,
+/static/6aa9a0d01be872911948d85108e6b8b7/7deef/smart-patient-data.png 1599w" src="/static/6aa9a0d01be872911948d85108e6b8b7/40ffe/smart-patient-data.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><p>A <a href="https://smarthealthit.org" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">SMART on FHIR</a> app that allows doctors to view analytics for patient-generated health data (health/treatment history, biometric data, etc.). This app was designed with practitioners in mind, initiating a<!-- --> <a href="http://hl7.org/fhir/smart-app-launch/index.html" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">SMART launch sequence</a> <!-- -->so that the app can be launched securely within an EHR. It currently supports filtering by different events, zooming and panning to focus on a specific time period, and also plots a line and Gantt chart side-by-side.</p><ul class="Tech__TechList-sc-1dkq35h-0 VDFHN"><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">React</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">SMART-on-FHIR</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Material-UI</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">VictoryCharts</li></ul></div></div></li><li class="Card__Body-sc-1gb6pm9-0 iVwsGk"><div class="Card__Header-sc-1gb6pm9-1 ProjectCard__ProjectHeader-sc-1gpim8b-2 kxXfOj"><div class="Card__Header-sc-1gb6pm9-1 jOYDdy"><h3 class="ProjectCard__Title-sc-1gpim8b-0 heKVZf">StormRouter</h3> <!-- -->— <h4 class="ProjectCard__Description-sc-1gpim8b-1 iUNAnY">A weather-aware road trip planner</h4></div><button type="button" class="Card__ArrowButton-sc-1gb6pm9-5 jXbpab"><div style="display:flex"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" class="Card__Arrow-sc-1gb6pm9-4 gJijhR"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></div></button></div><div class="Card__Collapsing-sc-1gb6pm9-3 cYMJrs"><div class="Card__Content-sc-1gb6pm9-2 iaALdf"><p>A Java application designed to help travelers plan a road trip around inclement weather to help keep their trip safe and stress-free. I first prototyped the UI using HTML/CSS and later integrated the<!-- --> <a href="https://www.mapbox.com/" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">Mapbox</a> JavaScript API to provide the underlying map and to enable searching for locations by name.</p><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:53.75%"></div><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACgklEQVQoz4WSXU8TQRhG9z8KQixSS1uhiLQU2AIaE/kBJgbjR2JE1Au5MRFECkZKLFQsu9vtx4Kl0Ha3H7stIEUTvTwOjSF4oxcnM5NJTp7nnZE6Qx7cN/vw9rmYvuunYiVxqjpmWcGsqJT2k5glhYPKZ/TSChVxVxL7/YMtMrm4uNN49+E98sMZpmcfIXVcGyQQHCMw5Ea+1U/dTlFraDi2juPs0KjnsOsZ8rU42wUhtDIcNrI0TZXTRoql+Br5Ypqn2Tr3lCZSYKCbqYlh3L4uhseuoJrL6JUVimaCki3SlVWqlW1qToqqpVIUydc3PxFNKkQzBvfXdWZyNg92HMKre0jX/S4icgi/r5fQiBt9d5V8OU61ptCwc+wXttgrJLAsIRXCNX2HxxsGD1IWd/RvjKZ/ENJOGdW+IeunSP3+boLDAwQCHqYm/aKyItIoQqiJqip1MbOqmeGkYbCR3eWZVuLxrsN0+ojx1IkQnTB2tqZa7b0U6O8mHArg9/cwOeGjLJKYpkJdYBV1GpU0h/UssfU1YikNOfudIaXFiHYmaLVl57SFAy5CwQFcrg5k2YNV+oJdE6JqWqTcJZZIEE98xiwkiRa+EhT15IuSc1ptpEEhDIcH6XVfZlz2YhY1QRpV22RRzfExnSG2Y2DYe6JmU8yr9afi36Jzod/byVDQQ6+nk0jEi1PXsMoaseQmr/QD8f8MVg2DiHZEWBWP8B8k7/VLDA5fw93XxXjEx2HT4Pg4z55dYMFqknP2qTh5pnI/Gc/9IiKQ/4Hk7b+M70YPPe4ORkd62Nh4wnJ0lvm3L7n9+g135+eZmX+Oa26J3hdLXL3A2bnvxWIbz5xY5xb4Ddk2qg/9YGeZAAAAAElFTkSuQmCC" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/ac6f0373f06f478b5318b1032808215e/2b087/storm-router.png 240w,
+/static/ac6f0373f06f478b5318b1032808215e/19ca5/storm-router.png 480w,
+/static/ac6f0373f06f478b5318b1032808215e/40ffe/storm-router.png 960w,
+/static/ac6f0373f06f478b5318b1032808215e/3bf79/storm-router.png 1440w,
+/static/ac6f0373f06f478b5318b1032808215e/eeb1b/storm-router.png 1920w,
+/static/ac6f0373f06f478b5318b1032808215e/6c0ca/storm-router.png 2410w" sizes="(max-width: 960px) 100vw, 960px" /><img loading="lazy" sizes="(max-width: 960px) 100vw, 960px" srcset="/static/ac6f0373f06f478b5318b1032808215e/2b087/storm-router.png 240w,
+/static/ac6f0373f06f478b5318b1032808215e/19ca5/storm-router.png 480w,
+/static/ac6f0373f06f478b5318b1032808215e/40ffe/storm-router.png 960w,
+/static/ac6f0373f06f478b5318b1032808215e/3bf79/storm-router.png 1440w,
+/static/ac6f0373f06f478b5318b1032808215e/eeb1b/storm-router.png 1920w,
+/static/ac6f0373f06f478b5318b1032808215e/6c0ca/storm-router.png 2410w" src="/static/ac6f0373f06f478b5318b1032808215e/40ffe/storm-router.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><ul class="Tech__TechList-sc-1dkq35h-0 VDFHN"><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Spark</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">jQuery</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Mapbox</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">JUnit</li></ul></div></div></li><li class="Card__Body-sc-1gb6pm9-0 iVwsGk"><div class="Card__Header-sc-1gb6pm9-1 ProjectCard__ProjectHeader-sc-1gpim8b-2 kxXfOj"><div class="Card__Header-sc-1gb6pm9-1 jOYDdy"><h3 class="ProjectCard__Title-sc-1gpim8b-0 heKVZf"><a href="https://github.com/ArYalavarti/HappyLog" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">HappyLog</a></h3> <!-- -->— <h4 class="ProjectCard__Description-sc-1gpim8b-1 iUNAnY">A simple and colorful mood calendar</h4></div><button type="button" class="Card__ArrowButton-sc-1gb6pm9-5 jXbpab"><div style="display:flex"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" class="Card__Arrow-sc-1gb6pm9-4 gJijhR"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></div></button></div><div class="Card__Collapsing-sc-1gb6pm9-3 cYMJrs"><div class="Card__Content-sc-1gb6pm9-2 iaALdf"><p>A mental health web app to track and provide analytics for fluctuations in happiness of the user from day to day. The idea was to take a colorful mood calendar, which gives a high-level overview of your mood at a glance, and add analytics for users to learn more about their habits and productivity. I contributed to the analytics chart, which required filtering and displaying data queried from a<!-- --> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">MongoDB</a> database.</p><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:55.41666666666667%"></div><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABX0lEQVQoz3WSS26DQAyGuf81eoTeoOom6qLdRF02jZJ0kQQIhGEe9vy1B6Y8lFqAheX5/Nvjou0Ctpsj6FzCnitw1yNbjBFz0/91bB0vAjGa2oKtg7132O92MMaAmf8S5wfUV3WNsqwkr5e8mKn6oMhVSAD1rcHp9IPyWsFau6geZ3mHwxH7/QHnywVElHn6RbFsg2Cpk3BYtKw+K1avxmxmsSCvH1qOo1S1j1eD9+dvfL+IOuOTqlxQlShg8AHk6wRRPlOPyGEEpoKMcuvx9tTgc7PD16aCb82iZQXFqEAWiBOAE5BNRZjMdClD5xH19YbmJoP2Ldq+hrHTbSvMOTe2yvCuQdd1Eu8TPBXIM8wqegG09zt6I1VFRRxnlRWGENKNEnlQMNDtYHJj6zwpfLRX6/3SFKKQZhV8k2aoMWaSuF3u4fJg/Hf3BhWcwNNMJb7KfQhcb/9c6fBOwPW5X392YVxUDPx1AAAAAElFTkSuQmCC" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/a1a5ad546150e4170af94607e2c67663/2b087/happylog.png 240w,
+/static/a1a5ad546150e4170af94607e2c67663/19ca5/happylog.png 480w,
+/static/a1a5ad546150e4170af94607e2c67663/40ffe/happylog.png 960w,
+/static/a1a5ad546150e4170af94607e2c67663/3bf79/happylog.png 1440w,
+/static/a1a5ad546150e4170af94607e2c67663/eeb1b/happylog.png 1920w,
+/static/a1a5ad546150e4170af94607e2c67663/2d947/happylog.png 3348w" sizes="(max-width: 960px) 100vw, 960px" /><img loading="lazy" sizes="(max-width: 960px) 100vw, 960px" srcset="/static/a1a5ad546150e4170af94607e2c67663/2b087/happylog.png 240w,
+/static/a1a5ad546150e4170af94607e2c67663/19ca5/happylog.png 480w,
+/static/a1a5ad546150e4170af94607e2c67663/40ffe/happylog.png 960w,
+/static/a1a5ad546150e4170af94607e2c67663/3bf79/happylog.png 1440w,
+/static/a1a5ad546150e4170af94607e2c67663/eeb1b/happylog.png 1920w,
+/static/a1a5ad546150e4170af94607e2c67663/2d947/happylog.png 3348w" src="/static/a1a5ad546150e4170af94607e2c67663/40ffe/happylog.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><ul class="Tech__TechList-sc-1dkq35h-0 VDFHN"><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">React</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Express</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">MongoDB</li></ul></div></div></li><li class="Card__Body-sc-1gb6pm9-0 iVwsGk"><div class="Card__Header-sc-1gb6pm9-1 ProjectCard__ProjectHeader-sc-1gpim8b-2 kxXfOj"><div class="Card__Header-sc-1gb6pm9-1 jOYDdy"><h3 class="ProjectCard__Title-sc-1gpim8b-0 heKVZf">Portfolio Website</h3> <!-- -->— <h4 class="ProjectCard__Description-sc-1gpim8b-1 iUNAnY">The blazing fast website you&#x27;re on right now!</h4></div><button type="button" class="Card__ArrowButton-sc-1gb6pm9-5 jXbpab"><div style="display:flex"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" class="Card__Arrow-sc-1gb6pm9-4 gJijhR"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></div></button></div><div class="Card__Collapsing-sc-1gb6pm9-3 cYMJrs"><div class="Card__Content-sc-1gb6pm9-2 iaALdf"><p>I built this website from the ground up using a<!-- --> <a href="https://reactjs.org/" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">React</a> framework called<!-- --> <a href="https://www.gatsbyjs.com" target="_blank" rel="noreferrer" class="Link-cx0v57-0 lbsSZU">Gatsby</a>. I wanted a website that was blazing fast. I wanted composable components. Luckily Gatsby had me covered on both fronts.</p><ul class="Tech__TechList-sc-1dkq35h-0 VDFHN"><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">React</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">Gatsby</li><li class="Tech__TechItem-sc-1dkq35h-1 fBnAcv">styled-components</li></ul></div></div></li></ol></section></main><footer class="Layout__Footer-sc-123tbf3-2 gqAJKM"><address class="Footer__Socials-sc-1xqajj9-0 kJvVJz"><ul class="Footer__SocialList-sc-1xqajj9-1 bvozHr"><li class="Footer__Social-sc-1xqajj9-2 bHnODW"><a href="https://github.com/jason-crowley" target="_blank" rel="noreferrer" class="Link-cx0v57-0 Footer__SocialLink-sc-1xqajj9-3 jRffev"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><span class="Footer__LinkText-sc-1xqajj9-4 jnPPDG">jason-crowley</span></a></li><li class="Footer__Social-sc-1xqajj9-2 bHnODW"><a href="https://www.linkedin.com/in/jason-crowley" target="_blank" rel="noreferrer" class="Link-cx0v57-0 Footer__SocialLink-sc-1xqajj9-3 jRffev"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg><span class="Footer__LinkText-sc-1xqajj9-4 jnPPDG">jason-crowley</span></a></li><li class="Footer__Social-sc-1xqajj9-2 bHnODW"><a href="mailto:jason_crowley@brown.edu" target="_blank" rel="noreferrer" class="Link-cx0v57-0 Footer__SocialLink-sc-1xqajj9-3 jRffev"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg><span class="Footer__LinkText-sc-1xqajj9-4 jnPPDG">jason_crowley@brown.edu</span></a></li></ul></address></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-8b96a315fda5853eab34.js"],"component---src-pages-404-js":["/component---src-pages-404-js-a6fcf3bc1883b7bdf2e1.js"],"component---src-pages-index-js":["/component---src-pages-index-js-28a8aad2f19d8ec7f6a8.js"]};/*]]>*/</script><script src="/component---src-pages-index-js-28a8aad2f19d8ec7f6a8.js" async=""></script><script src="/commons-3d01babe319215f70c0c.js" async=""></script><script src="/cb1608f2-cfbcec3c7451c899b837.js" async=""></script><script src="/a9a7754c-4661b79a55a269b04aa8.js" async=""></script><script src="/styles-89fd2ae28bdf06750a71.js" async=""></script><script src="/app-8b96a315fda5853eab34.js" async=""></script><script src="/framework-5fc6169171e885c3b522.js" async=""></script><script src="/webpack-runtime-49a85d9f83de502fc754.js" async=""></script></body></html>
