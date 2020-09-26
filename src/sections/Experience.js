@@ -9,6 +9,8 @@ import MITRELogo from "../components/logos/MITRELogo"
 import BCHLogo from "../components/logos/BCHLogo"
 import KTBYTELogo from "../components/logos/KTBYTELogo"
 
+import Link from "../components/Link"
+
 const Experience = () => (
   <Section>
     <SectionHeading>Experience</SectionHeading>
@@ -28,7 +30,32 @@ const Experience = () => (
         ]}
       >
         <ul>
-          <li>Was an intern</li>
+          <li>
+            Practiced scrum on Team{" "}
+            <Link href="https://github.com/onc-healthit/inferno">Inferno</Link>{" "}
+            of the Open Health Services department
+          </li>
+          <li>
+            Ported Inferno's{" "}
+            <Link href="https://inferno.healthit.gov/validator/">
+              FHIR validator app
+            </Link>{" "}
+            to <Link href="https://reactjs.org/">React</Link> and architected
+            form state management to enable dynamic form validation
+          </li>
+          <li>
+            Optimized response times on first request by a factor of 3 by
+            refactoring validator service to be eagerly initialized
+          </li>
+          <li>
+            Introduced support for validating against 200+ different FHIR
+            Implementation Guides fetched from packages.fhir.org
+          </li>
+          <li>
+            Spearheaded development of the{" "}
+            <Link href="https://www.hl7.org/fhir/fhirpath.html">FHIRPath</Link>{" "}
+            evaluator microservice
+          </li>
         </ul>
       </ExperienceCard>
       <ExperienceCard
@@ -39,7 +66,8 @@ const Experience = () => (
       >
         <ul>
           <li>
-            Trained in FHIR health resource representation and SMART app
+            Trained in FHIR health resource representation and{" "}
+            <Link href="https://smarthealthit.org/">SMART app</Link>{" "}
             authentication
           </li>
           <li>
@@ -47,12 +75,18 @@ const Experience = () => (
             format as health data found in EHR databases using JavaScript
           </li>
           <li>
-            Enabled SMART launch sequence for secure integration from within a
-            hospital EHR context
+            Enabled{" "}
+            <Link href="http://hl7.org/fhir/smart-app-launch/index.html">
+              SMART launch sequence
+            </Link>{" "}
+            for secure integration from within a hospital EHR context
           </li>
           <li>
-            Leveraged Victory Charts library for interactive, responsive, and
-            informative custom charts
+            Leveraged{" "}
+            <Link href="https://formidable.com/open-source/victory/">
+              Victory Charts
+            </Link>{" "}
+            library for interactive, responsive, and informative custom charts
           </li>
         </ul>
       </ExperienceCard>

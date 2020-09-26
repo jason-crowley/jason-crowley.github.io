@@ -9,7 +9,8 @@ const About = () => (
     <p>
       I'm a Computer Science Undergraduate Student at Brown University. I am
       currently taking courses in <em>AI/ML</em> as well as exploring the{" "}
-      <em>design and construction of computer systems</em>.
+      <em>design and construction of computer systems</em>. I enjoy attending
+      hackathons to put my skills to the test!
     </p>
     <p>
       <strong>I love to learn.</strong> I am never satified with just scratching
